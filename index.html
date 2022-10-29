@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">    
+    <title>Login</title>
+</head>
+<body>
+    <a href="#home" class="sticky">Home</a>
+    <div class="container" id="home">
+        <div class="contents column">
+            <h2>PHẦN MỀM QUẢN LÝ <br>CÁN BỘ ĐỘI 2 - PHÒNG 7</h2>
+            <ul class="list">
+                <li><a href="#info-personal">Thông tin cán bộ</a></li>
+                <li><a href="#add-info">Bổ sung cán bộ</a></li>
+                <li><a href="">Văn bản mẫu</a></li>
+            </ul>
+        </div>
+        <div class="img column">
+            <img src="./assets/img/—Pngtree—chatbot messenger concept design man_6671191.png" alt="">
+        </div>
+    </div>
+    <!-- Bổ sung cán bộ -->
+    <section id="add-info" class="heading">
+        <h2>nhập thông tin cán bộ</h2>
+        <div class="form-input">
+            <div class="fullname form-flex">
+                <div class="name column-header"><label for="">Họ và tên:</label><input type="text" name="" id="fullNameID" placeholder="Nguyễn Văn Biên..."></div>
+                <div class="sex column-header">
+                    <label class="gender" for="">Giới tính:</label>
+                    <div class="checker gender">
+                        <div class="boy">
+                            <input class="radio" checked="checked" type="radio" name="gender" id="boy" value="1"><span>Nam</span>
+                        </div>
+                        <div class="girl">
+                            <input class="radio" type="radio" name="gender" id="girl" value="0"><span>Nữ</span>
+                        </div>
+                    </div>
+            </div>
+            </div>
+            <div class="address"><label for="">Địa chỉ:</label><input type="text" name="" id="address" placeholder="TT Hợp Hoà, Huyện Tam Dương, Tỉnh Vĩnh Phúc"></div>
+            <div class="full-address form-flex">
+                <div class="birthday"><label for="">Ngày sinh:</label><input type="date" name="bday" id="birthday"></div>
+                <div class="phone"><label for="">Số điện thoại:</label><input type="text" name="" id="phone" placeholder="0349007041"></div>
+            </div>
+            <div class="full-rank form-flex">
+                <div class="rank">
+                    <label for="">Quân hàm:</label><input type="text" name="" id="rank" placeholder="Thượng uý">
+                </div>
+                <div class="office"><label for="">Chức vụ:</label><input type="text" name="" id="office" placeholder="Cán bộ"></div>
+            </div>
+            <div class="partisan"><label for="">Ngày vào đảng:</label><input type="date" name="bday" id="partisan"></div>
+            <div class="certificate"><label for="">Văn bằng, chứng chỉ:</label><textarea name="" id="certificate" cols="30" rows="10"></textarea></div>
+            <div class="image"><label for="">Ảnh cá nhân:</label><input class="up-file" type="file" name="" id=""></div>
+            <button onclick="saveInfo()" class="save-info">Lưu</button>
+        </div>
+    </section>
+    <!-- Thông tin cán bộ -->
+    <section id="info-personal" class="heading">
+        <h2>THÔNG TIN CÁN BỘ</h2>
+        <table id="console">
+        </table>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
